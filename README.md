@@ -3,8 +3,8 @@
 ## usage
 
 ```bash
-git clone https://github.com/n4mlz/java-environment.git
-cd java-environment
+git clone https://github.com/n4mlz/julia-environment.git
+cd julia-environment
 
 docker compose up
 ```
