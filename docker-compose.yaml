@@ -1,0 +1,9 @@
+services:
+  main:
+    image: julia:latest
+    container_name: julia
+    tty: true
+    volumes:
+      - type: bind 
+        source: ./workspace
+        target: /opt/workspace
