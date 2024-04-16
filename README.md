@@ -6,5 +6,5 @@
 git clone https://github.com/n4mlz/julia-environment.git
 cd julia-environment
 
-docker compose up
+docker compose up -d
 ```

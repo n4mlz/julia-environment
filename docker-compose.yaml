@@ -1,9 +1,12 @@
 services:
   main:
-    image: julia:latest
+    image: jupyter/datascience-notebook
     container_name: julia
+    user: root
+    ports:
+      - 8888:8888
     tty: true
     volumes:
-      - type: bind 
-        source: ./workspace
-        target: /opt/workspace
+      - ./work:/home/jovyan/work
+    command: start-notebook.sh --NotebookApp.token='' --NotebookApp.password=''
+    
